@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procesador de Texto</title>
+  </head>
+  <body>
+    <h1>Procesador de Texto</h1>
+    <form action="/procesar" method="post">
+      <textarea name="texto" placeholder="Ingrese el texto" required></textarea>
+      <select name="operacion" required>
+        <option value="dividir">Dividir Palabra</option>
+        <option value="extraer">Extraer Cadena</option>
+        <option value="eliminarEspacios">Eliminar Espacios</option>
+        <option value="capitalizar">Capitalizar</option>
+        <option value="minusculas">Convertir a Minúsculas</option>
+        <option value="mayusculas">Convertir a Mayúsculas</option>
+        <option value="contarCaracteres">Contar Caracteres</option>
+      </select>
+      <button type="submit">Procesar</button>
+    </form>
+  </body>
+</html>
